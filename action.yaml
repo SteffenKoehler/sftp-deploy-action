@@ -1,0 +1,30 @@
+name: 'sftp uploader'
+description: 'ftp / sftp uploader'
+inputs:
+  host:
+    description: 'FTP host URL like: ftp.host.com or sftp.host.com'
+    required: true
+  port:
+    description: 'FTP port'
+    required: false
+    default: '21'
+  username:
+    required: true
+    description: 'Ftp username'
+  password:
+    required: true
+    description: 'Ftp password'
+  remoteDir:
+    required: false
+    description: 'The remote folder location of your FTP server'
+  localDir:
+     required: false
+     default: dist
+     description: 'The local folder location'
+  cleanup:
+    required: false
+    default: 'false'
+    description: 'Delete files on remote before upload'
+runs:
+  using: 'node16'
+  main: 'index.js'

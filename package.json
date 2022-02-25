@@ -1,0 +1,15 @@
+{
+  "name": "sftp-deploy-action",
+  "version": "1.0.0",
+  "description": "Github action for sftp deploy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "ssh2-sftp-client": "^7.2.2"
+  }
+}
